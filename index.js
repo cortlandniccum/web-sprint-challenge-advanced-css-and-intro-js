@@ -217,9 +217,7 @@ console.log('Third Artist', artists[2]);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-artists.splice(8, 1, 'Vincent Van Gogh');
 
-console.log(artists[8].name);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -230,9 +228,11 @@ console.log(artists[8].name);
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+
+function getArtistByIndex(array, number){
+  return (`the artist at index ${array[number].id} is ${array[number].name}`);
 }  
+console.log('task 3', getArtistByIndex(artists, 9));
 
 
 
@@ -244,8 +244,13 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+function get20s(array){
+  let newArr = []
+  for (let i = 0; i < array.length; i++);
+    let birthYear = array[i]['years'].split(" - ");
+      if (parseInt(birthYear[0]) >= 1900 && parseInt(birthYear[i]) <= 2000{
+        newArr.push(array[i]['name']);
+      }
 }
 
 
@@ -259,8 +264,8 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(array, number){
+  for (let i = 0; i < array.length; i++);
 }
    
 
