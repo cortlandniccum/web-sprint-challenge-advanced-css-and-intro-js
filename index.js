@@ -246,14 +246,17 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array){
   let newArr = []
-  for (let i = 0; i < array.length; i++);
+
+  for (let i = 0 ; i < array.length; i++){
     let birthYear = array[i]['years'].split(" - ");
-      if (parseInt(birthYear[0]) >= 1900 && parseInt(birthYear[i]) <= 2000{
-        newArr.push(array[i]['name']);
-      }
+
+    if (parseInt(birthYear[0]) >= 1900 && parseInt(birthYear[1]) <= 2000 ){
+
+      newArr.push(array[i]['name'])
+    } 
+  }
+  return newArr 
 }
-
-
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -265,7 +268,7 @@ function get20s(array){
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, number){
-  for (let i = 0; i < array.length; i++);
+  removeArtist.splice(0);
 }
    
 
